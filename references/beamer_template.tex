@@ -1,0 +1,99 @@
+\documentclass[aspectratio=169, 11pt]{beamer}
+\usetheme{Madrid}
+\usecolortheme{whale}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+% --- Placeholders (filled by the skill) ---
+\newcommand{\casedate}{YYYY-MM-DD}
+\newcommand{\casetopic}{Topic Name}
+\newcommand{\caseslug}{topic_slug}
+
+\title{Today's Market Case}
+\subtitle{\casetopic{} --- \casedate}
+\author{EF5342 --- Financial Systems, Markets and Instruments}
+\institute{City University of Hong Kong}
+\date{\casedate}
+
+\begin{document}
+
+%=== Slide 1: Title ===%
+\begin{frame}
+\titlepage
+\end{frame}
+
+%=== Slide 2: Context + Key Numbers ===%
+\begin{frame}{What Happened: [EVENT HEADLINE]}
+[2--3 sentence summary of the market event. What happened, why it matters,
+and what markets are reacting to.]
+
+\vspace{1em}
+\begin{table}
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+Metric & Value & Change \\
+\midrule
+Indicator 1 & Level & \% or bps change \\
+Indicator 2 & Level & \% or bps change \\
+Indicator 3 & Level & \% or bps change \\
+Indicator 4 & Level & \% or bps change \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\vspace{0.5em}
+{\footnotesize \textit{Source:} [News source], [Date]. Data: Yahoo Finance.}
+\end{frame}
+
+%=== Slide 3: Chart ===%
+\begin{frame}{[CHART TITLE, e.g., ``10-Year Treasury Yield, 3-Month Trailing'']}
+\begin{center}
+% The skill replaces the \fbox below with \includegraphics[width=0.85\textwidth]{chart.png}
+\fbox{\parbox{0.85\textwidth}{\centering\vspace{2cm}[CHART PLACEHOLDER]\vspace{2cm}}}
+\end{center}
+\vspace{-0.5em}
+{\footnotesize [One-line caption describing what the chart shows.]}
+\end{frame}
+
+%=== Slide 4: Historical Parallel + Theory Link ===%
+\begin{frame}{Putting It in Context}
+\textbf{Historical parallel:}
+[When did something similar happen? 1--2 sentences comparing today's event to
+a past episode, noting what is similar and what is different.]
+
+\vspace{1em}
+\textbf{Connection to [WEEK TOPIC]:}
+[1--2 sentences linking the event to the course concept being taught that week.
+If there is a key formula or diagram, include it here, e.g.:]
+
+\[
+\text{Yield to Maturity: } P = \sum_{t=1}^{T} \frac{C}{(1+y)^t} + \frac{F}{(1+y)^T}
+\]
+\end{frame}
+
+%=== Slide 5: Discussion Questions ===%
+\begin{frame}{Discussion Questions}
+% [Bloom: Apply]
+\textbf{Q1.} [First question --- directly applies the week's concept to the event.
+Ask students to use a framework, formula, or model to explain what happened.]
+
+\vspace{1em}
+% [Bloom: Analyse]
+\textbf{Q2.} [Second question --- compare or contrast with the historical parallel,
+or analyse cause-and-effect using course concepts.]
+
+\vspace{1em}
+% [Bloom: Evaluate]
+\textbf{Q3.} [Third question --- judgment-oriented. Ask students to take a position
+on a policy or investment decision, justifying with course concepts.]
+\end{frame}
+
+\end{document}

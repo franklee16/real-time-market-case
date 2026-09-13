@@ -1,0 +1,29 @@
+{
+  "skill_name": "real-time-market-case",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/today-case",
+      "expected_output": "A 5-slide Beamer PDF in My Slides/Today's Case/ with: auto-detected topic from recent news, matplotlib chart with market data, key numbers table, historical parallel, theory connection, and 2-3 discussion questions. All compiled and ready to project.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "/today-case week7",
+      "expected_output": "A 5-slide Beamer PDF focused on FX markets (Week 7). Should search for currency/forex news, pull exchange rate data (USD, CNY, EUR), generate a chart of currency movements, and connect to exchange rate concepts like PPP or interest rate parity.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm teaching derivatives tomorrow. Can you find a recent market event I can use as a class opener?",
+      "expected_output": "Should trigger the skill, recognize 'derivatives' maps to Week 8, search for volatility/options/futures news, pull VIX or options-related data, create a chart, and generate discussion questions about hedging, implied volatility, or Greeks.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "/today-case week8 — but imagine the generated case has a wrong put-call parity formula (c - p = S + K e^{-rT}) and a theory link about the Gordon growth model. Verify the review gate catches and fixes this.",
+      "expected_output": "Should produce the 5-slide deck PLUS a {slug}_case_audit.md and a {slug}_critic.md. The market-case-critic must return BLOCK (wrong formula is check #4; Week-5 theory link on a Week-8 case is check #6), the skill must auto-revise (correct put-call parity to c - p = S - K e^{-rT}; rewrite the theory link to use Black-Scholes / Greeks / hedging), recompile, and re-run the critic until PASS or 3 rounds. Terminal report states the final critic score and verdict.",
+      "files": []
+    }
+  ]
+}
